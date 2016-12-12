@@ -231,9 +231,13 @@
     document.getElementById("tree_segments_angle2").addEventListener("change", recompute_tree) ;
     
     // When mouse is moved 
-    document.addEventListener("mousemove touchmove",function(e){
+    document.addEventListener("mousemove",function(e){
         if(!animateTimeout && e.movementX) bendTree(1,e.movementX) ;
     }) ;
-
+    
+    // When touch is moved 
+    document.addEventListener("touchmove",function(e){
+        if(!animateTimeout && e.movementX) bendTree(1,e.movementX) ;
+    }) ;
 
 })() ;
