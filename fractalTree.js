@@ -113,7 +113,7 @@
                 recompute_tree() ;
                 
                 if(animate_apply_functs.length && typeof animate_apply_functs[0] == 'function') {
-                    animateTimeout = setTimeout(f,4) ;
+                    animateTimeout = requestAnimationFrame(f) ;
                 }
                 else {
                     clearTimeout(animateTimeout) ;
@@ -231,7 +231,7 @@
     document.getElementById("tree_segments_angle2").addEventListener("change", recompute_tree) ;
     
     // When mouse is moved 
-    document.addEventListener("mousemove",function(e){
+    document.addEventListener("mousemove touchmove",function(e){
         if(!animateTimeout && e.movementX) bendTree(1,e.movementX) ;
     }) ;
 
