@@ -16,7 +16,7 @@ exemples : *ben/exo1/tache_dans_lexo* , *ben/exo1/autre_tache_dans_lexo*
 
 
 ### Exercice 1 ###
-Remplacer le `setTimeout()` par un `requestAnimationFrame()` et observez la différence
+Remplacer le `requestAnimationFrame()` par un `requestAnimationFrame()` et observez la différence
 
 ### Exercice 2 ###
 Ajoutez une réaction sur le mouvement vertical de la souris : on veut que l'arbre pousse si on monte le curseur, qu'il dépousse si le curseur descend
